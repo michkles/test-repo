@@ -1,0 +1,10 @@
+<form action='/names' method='post'>
+	<input type="text" name="name_p1">
+	<input type="text" name="name_p2">
+	<input type="submit" value="send">
+</form>	
+
+<% if @p1_name && @p2_name %>
+<%= @p1_name %> vs  <%= @p2_name %>
+<a href="/attack">Attack him! Let him die!</a>
+<% end %>
